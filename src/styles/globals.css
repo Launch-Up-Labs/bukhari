@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --brown: #6a0202;
+  --white: #fff;
+  --dark: #000;
+  --light: #ebe2d1;
+  --text_brown: #633e2f;
+  --font-primary: "Baskerville";
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0;
+  color: var(--dark);
+  text-transform: none;
+}
+
+.hero-section {
+  color: var(--brown);
+}
+.hero-section h1 {
+  font-size: 100px;
+}
+.hero-section p {
+  font-size: 40px;
+  line-height: 40px;
+}
+.border {
+  border-bottom: solid 2px var(--brown);
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 93%;
+}
+.sidebar-button {
+  display: flex !important;
+}
+
+.section--brown {
+  background-color: var(--brown);
+}
+.section--light {
+  background-color: var(--light);
+}
+.bg_white {
+  background-color: var(--white);
+}
+.bg_image_1 {
+  position: relative;
+  background-image: url("../../public//assets/sahih_bg_1.jpg"); /* Update the path to your image */
+  background-size: cover;
+  background-position: center;
+}
+.bg_image_2 {
+  position: relative;
+  background: url("../../public/assets/sahih_bg_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.bg_image_3 {
+  position: relative;
+  background-image: linear-gradient(
+    180deg,
+    rgba(57, 24, 1, 0) 0%,
+    rgba(0, 0, 0, 0.73) 27.96%,
+    rgba(0, 0, 0, 0.73) 50.5%,
+    rgba(0, 0, 0, 0.73) 73.68%,
+    rgba(39, 16, 0, 0) 100%
+    ),
+    url("../../public//assets/biography_bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bg_image_4 {
+    position: relative;
+    background: url("../../public/assets/manuscripts_bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+  
+  .bg_image_5 {
+    position: relative;
+    background: url("../../public/assets/manuscripts_bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+  .bg_image_6 {
+    position: relative;
+    background: url("../../public/assets/manuscripts_bg_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+  .bg_content {
+  position: relative;
+  z-index: 2;
+}
+.text_white {
+  color: var(--white);
+}
+.text_brown {
+  color: var(--brown);
+}
+.text_light_brown {
+  color: var(--text_brown);
+}
+
+.sahih_point li {
+  line-height: 2.5rem;
+}
+.section--gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(57, 24, 1, 0) -14%,
+    rgba(49, 31, 24, 0.94) 24.96%,
+    rgba(49, 31, 24, 0.94) 50.5%,
+    rgba(49, 31, 24, 0.94) 75.68%,
+    rgba(39, 16, 0, 0) 130%
+  );
+}
+
+.overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  width: 100%;
+}
+
+.display_content{
+  display: contents;
+}
