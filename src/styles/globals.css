@@ -144,3 +144,8 @@ body {
 .display_content{
   display: contents;
 }
+
+.blogCards {
+  display: flex;
+  justify-content: space-between;
+}

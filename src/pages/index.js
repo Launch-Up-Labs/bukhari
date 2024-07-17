@@ -1,12 +1,16 @@
 // pages/index.js
+import BlogCard from "@/components/BlogCard";
 import Navbar from "../components/Navbar";
+import Home1 from "../../public/assets/home1.png"
+import Home2 from "../../public/assets/home2.png"
+import Home3 from "../../public/assets/home3.png"
 
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
       <Navbar />
-      <header className="section--light hero-section text-br text-center py-12">
-        <h1 className="text-5xl font-bold mb-4">The Bukhārī Project</h1>
+      <header className="section--light hero-section text-br text-center py-12" style={{height: "100vh"}}>
+        <h1 className="text-5xl font-bold mb-4" style={{marginTop: "150px"}}>The Bukhārī Project</h1>
         <p className="text-lg mb-6">
           An introductory resource on the life and works of Imam al-Bukhārī and
           relevant scholarship
@@ -72,12 +76,10 @@ export default function Home() {
       </div>
       <div className="section--light">
         <section className="container mx-auto banner p-10">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-gray-400 h-60"></div>
-            <div className="bg-gray-400 h-60"></div>
-            <div className="bg-gray-400 h-60"></div>
-            <div className="bg-gray-400 h-60 col-span-1"></div>
-            <div className="bg-gray-400 h-60 col-span-1"></div>
+          <div className="blogCards">
+            <BlogCard thumb={Home1} title={"The Ṣaḥīḥ"} />
+            <BlogCard thumb={Home2} title={"Biography"} />
+            <BlogCard thumb={Home3} title={"Manuscripts"} />
           </div>
         </section>
       </div>

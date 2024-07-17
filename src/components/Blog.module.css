@@ -1,0 +1,36 @@
+
+.blogNav{
+overflow-x: hidden;
+margin-top: 100px;
+}
+.blogNav > h1 {
+  color: #7c0101;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Minion Pro';
+  line-height: 57.55px;
+  margin-left: 70px;
+}
+.blogNavItems{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.blogCardDiv{
+  padding: 70px 70px 70px 70px;
+}
+.blogCardDiv > p{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px;
+    line-height: 28.78px;
+    color: #7C0101;
+    font-family: "Baskerville";
+}
+.blogCard {
+  width: 374px;
+  height: 307px;
+  background-color: white;
+}
